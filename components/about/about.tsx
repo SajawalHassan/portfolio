@@ -1,15 +1,17 @@
 import Image from "next/image";
+import Rain from "@/assets/Rain.png";
 import MeAtDinner from "@/assets/MeAtDinner.jpg";
 
 import { AboutInfoItem } from "./about-info-item";
+import { WaterArrowUp } from "../ui/icons";
 
 export const About = () => {
   return (
-    <div className="max-w-[1280px] w-full pl-[17px] pr-[10px] pt-[20px] pb-[15px] md:flex gap-x-[28px]" id="about">
-      <h1 className="text-[38px] md:text-[30px lg:text-[44px] font-bold bg-gradient-to-r from-th-primary to-th-accent bg-clip-text text-transparent md:hidden">
+    <div className="max-w-[1280px] w-full pl-[17px] pr-[10px] pt-[20px] pb-[15px] md:flex gap-x-[28px] relative" id="about">
+      <h1 className="text-[38px] md:text-[30px] lg:text-[44px] th-md:text-center font-bold bg-gradient-to-r from-th-primary to-th-accent bg-clip-text text-transparent md:hidden">
         Who am I
       </h1>
-      <div className="overflow-hidden min-w-[340px] min-h-[310px] max-w-[506px] max-h-[684px] lg:max-w-full lg:max-h-full relative rounded-[24px]">
+      <div className="overflow-hidden min-w-[340px] min-h-[310px] max-w-[506px] max-h-[684px] lg:max-w-full lg:max-h-full relative rounded-[24px] th-md:mx-auto">
         <Image src={MeAtDinner} alt="Sajawal Hassan at dinner" className="object-cover rounded-[24px] lg:h-full lg:w-full" />
       </div>
 
@@ -41,12 +43,16 @@ export const About = () => {
           </p>
         </section>
 
-        <section className="flex items-center gap-x-[60px] flex-wrap mt-[12px] gap-y-[18px]">
+        <section className="flex items-center gap-x-[60px] flex-wrap mt-[12px] gap-y-[18px] relative">
           <AboutInfoItem text="Name" subText="Sajawal Hassan" />
           <AboutInfoItem text="Email" subText="sajawalhassan.1feb@gmail.com" />
           <AboutInfoItem text="Employment" subText="Open" />
+
+          <WaterArrowUp className="absolute -bottom-3 right-[2rem] xl:right-[7rem] md:hidden lg:block" />
         </section>
       </section>
+
+      <Image src={Rain} alt="Rain" width={160} height={112} className="absolute -top-7 right-0 brightness-50 rotate-12 bouncing-image" />
     </div>
   );
 };
