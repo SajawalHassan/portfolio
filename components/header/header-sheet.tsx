@@ -27,9 +27,15 @@ export const HeaderSheet = () => {
         </section>
 
         <section className="flex items-center justify-center gap-x-2 h-[2rem]">
-          <Image src={YoutubeImg} alt="Youtube" width={32} height={32} className="cursor-pointer hover:w-[36px] hover:h-[36px] transition-all" />
-          <Image src={GithubImg} alt="Github" width={32} height={32} className="cursor-pointer hover:w-[36px] hover:h-[36px] transition-all" />
-          <Image src={TwitterImg} alt="Twitter" width={32} height={32} className="cursor-pointer hover:w-[36px] hover:h-[36px] transition-all" />
+          <a href="https://youtube.com/sajawalhassan1f12">
+            <Image src={YoutubeImg} alt="Youtube" width={32} height={32} className="cursor-pointer hover:w-[36px] hover:h-[36px] transition-all" />
+          </a>
+          <a href="https://github.com/sajawalhassan">
+            <Image src={GithubImg} alt="Github" width={32} height={32} className="cursor-pointer hover:w-[36px] hover:h-[36px] transition-all" />
+          </a>
+          <a href="https://twitter.com/sajawalhassan1f12">
+            <Image src={TwitterImg} alt="Twitter" width={32} height={32} className="cursor-pointer hover:w-[36px] hover:h-[36px] transition-all" />
+          </a>
         </section>
       </SheetContent>
     </Sheet>

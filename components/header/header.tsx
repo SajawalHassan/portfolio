@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <header>
       <nav className="flex items-center justify-between">
-        <Link href="#hero" scroll={false} className="text-[18px] font-bold text-th-text">
+        <Link href="#hero" className="text-[18px] font-bold text-th-text">
           Sajawal Hassan
         </Link>
 
