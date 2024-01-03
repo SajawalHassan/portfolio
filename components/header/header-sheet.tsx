@@ -20,7 +20,7 @@ export const HeaderSheet = () => {
         </SheetHeader>
 
         <section className="text-center flex flex-col items-center gap-y-2">
-          <HeaderSheetItem link="#home" text="Home" isActive={true} />
+          <HeaderSheetItem link="#hero" text="Home" isActive={true} />
           <HeaderSheetItem link="#about" text="About" isActive={false} />
           <HeaderSheetItem link="#projects" text="Projects" isActive={false} />
           <HeaderSheetItem link="#contact" text="Contact" isActive={false} />
