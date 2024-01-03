@@ -3,10 +3,10 @@ import { HeaderLinksItem } from "./header-links-item";
 export const HeaderLinks = () => {
   return (
     <div className="hidden md:flex items-center gap-x-[31px]">
-      <HeaderLinksItem link="#hero" text="Home" isActive={true} />
-      <HeaderLinksItem link="#about" text="About" isActive={false} />
-      <HeaderLinksItem link="#projects" text="Projects" isActive={false} />
-      <HeaderLinksItem link="#contact" text="Contact" isActive={false} />
+      <HeaderLinksItem link="#hero" text="Home" />
+      <HeaderLinksItem link="#about" text="About" />
+      <HeaderLinksItem link="#projects" text="Projects" />
+      <HeaderLinksItem link="#contact" text="Contact" />
     </div>
   );
 };

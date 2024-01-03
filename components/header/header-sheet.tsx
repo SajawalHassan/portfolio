@@ -1,6 +1,9 @@
+"use client";
+
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { MenuIcon } from "@/components/ui/icons";
 import { HeaderSheetItem } from "./header-sheet-item";
+import { useState } from "react";
 
 import YoutubeImg from "@/assets/YouTube.png";
 import GithubImg from "@/assets/GitHub.png";
@@ -8,8 +11,10 @@ import TwitterImg from "@/assets/Twitter.png";
 import Image from "next/image";
 
 export const HeaderSheet = () => {
+  const [sheetIsActive, setSheetIsActive] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={sheetIsActive} onOpenChange={() => setSheetIsActive(!sheetIsActive)}>
       <SheetTrigger asChild>
         <MenuIcon className="cursor-pointer" />
       </SheetTrigger>
@@ -20,10 +25,10 @@ export const HeaderSheet = () => {
         </SheetHeader>
 
         <section className="text-center flex flex-col items-center gap-y-2">
-          <HeaderSheetItem link="#hero" text="Home" isActive={true} />
-          <HeaderSheetItem link="#about" text="About" isActive={false} />
-          <HeaderSheetItem link="#projects" text="Projects" isActive={false} />
-          <HeaderSheetItem link="#contact" text="Contact" isActive={false} />
+          <HeaderSheetItem link="#hero" text="Home" setSheetIsActive={setSheetIsActive} />
+          <HeaderSheetItem link="#about" text="About" setSheetIsActive={setSheetIsActive} />
+          <HeaderSheetItem link="#projects" text="Projects" setSheetIsActive={setSheetIsActive} />
+          <HeaderSheetItem link="#contact" text="Contact" setSheetIsActive={setSheetIsActive} />
         </section>
 
         <section className="flex items-center justify-center gap-x-2 h-[2rem]">
