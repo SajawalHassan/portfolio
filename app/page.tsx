@@ -1,6 +1,7 @@
 import { About } from "@/components/about/about";
 import { Header } from "@/components/header/header";
 import { Hero } from "@/components/hero/hero";
+import { WebDevSkillsAndProjects } from "@/components/skills-and-projects/web-dev-skills-and-projects";
 
 export default function Home() {
   return (
@@ -12,8 +13,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-th-secondary flex items-center justify-center mt-[25px] md:mt-[35px] lg:mt-[60px]">
+      <section className="bg-th-secondary flex items-center justify-center mt-[25px] md:mt-[35px] lg:mt-[60px] pl-[17px] pr-[10px]">
         <About />
+      </section>
+
+      <section className="flex items-center justify-center mt-[25px] md:mt-[35px] lg:mt-[60px] pl-[17px] pr-[10px]">
+        <WebDevSkillsAndProjects />
       </section>
 
       <div className="p-[10rem]" />

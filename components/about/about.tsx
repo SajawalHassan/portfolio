@@ -7,7 +7,7 @@ import { WaterArrowUp } from "../ui/icons";
 
 export const About = () => {
   return (
-    <div className="max-w-[1280px] w-full pl-[17px] pr-[10px] pt-[20px] pb-[15px] md:flex gap-x-[28px] relative" id="about">
+    <div className="max-w-[1280px] w-full pt-[20px] pb-[15px] md:flex gap-x-[28px] relative" id="about">
       <h1 className="text-[38px] md:text-[30px] lg:text-[44px] th-md:text-center font-bold bg-gradient-to-r from-th-primary to-th-accent bg-clip-text text-transparent md:hidden">
         Who am I
       </h1>
@@ -52,7 +52,13 @@ export const About = () => {
         </section>
       </section>
 
-      <Image src={Rain} alt="Rain" width={160} height={112} className="absolute -top-7 right-0 brightness-50 rotate-12 bouncing-image" />
+      <Image
+        src={Rain}
+        alt="Rain"
+        width={160}
+        height={112}
+        className="absolute -top-7 right-0 brightness-50 rotate-12 bouncing-image hidden md:block"
+      />
     </div>
   );
 };

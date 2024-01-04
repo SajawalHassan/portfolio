@@ -1,0 +1,30 @@
+[
+  {
+    "imageName": "reddit",
+    "name": "Reddit Clone",
+    "description": "This project is a Reddit clone developed using NextJS 14, Typescript 5, Prisma ORM 5, and Tailwind CSS 3. It aims to replicate some of the core functionalities of the popular social media platform Reddit.",
+    "githubLink": "https://github.com/SajawalHassan/reddit_clone_nextjs",
+    "liveLink": "https://reddit-clone-nextjs-1f12.vercel.app"
+  },
+  {
+    "imageName": "discord",
+    "name": "Discord Clone",
+    "description": "This project is a Discord clone created using a modern tech stack including NextJS 13, Typescript 5, Prisma ORM 5, and Tailwind CSS 3. It aims to imitate the key features of Discord.",
+    "githubLink": "https://github.com/SajawalHassan/discord_clone_nextjs",
+    "liveLink": null
+  },
+  {
+    "imageName": "google",
+    "name": "Google Clone",
+    "description": "This project is a Google clone created using ReactJS and Firebase. It uses the google api to make a fully working search engine.",
+    "githubLink": "https://github.com/SajawalHassan/google-clone-react",
+    "liveLink": "https://googlle-clone-1f12.web.app"
+  },
+  {
+    "imageName": "crsom",
+    "name": "CRSOM",
+    "description": "This project was made for a university to handle registrations for a national event called CRSOM. It was hosted in Pakistan.",
+    "githubLink": null,
+    "liveLink": "https://crsom.vercel.app/"
+  }
+]
