@@ -9,7 +9,7 @@
   {
     "imageName": "discord",
     "name": "Discord Clone",
-    "description": "This project is a Discord clone created using a modern tech stack including NextJS 13, Typescript 5, Prisma ORM 5, and Tailwind CSS 3. It aims to imitate the key features of Discord.",
+    "description": "This project is a Discord clone created using a modern tech stack including NextJS 13, Typescript 5, Prisma ORM 5, and Tailwind CSS 3. It aims to imitate the key features of Discord. There is no live demo sine I am using web sockets so to host it would require me to pay.",
     "githubLink": "https://github.com/SajawalHassan/discord_clone_nextjs",
     "liveLink": null
   },

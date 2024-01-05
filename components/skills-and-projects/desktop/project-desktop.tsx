@@ -1,25 +1,22 @@
 import { CarouselItem } from "@/components/ui/carousel";
+import { ProjectType } from "@/lib/types";
 
 import Github from "@/assets/GitHub.png";
 import LiveIcon from "@/assets/RFID-Signal.png";
 import Image from "next/image";
 
-interface Props {
-  project: {
-    imageName: string;
-    name: string;
-    description: string;
-    githubLink: string | null;
-    liveLink: string | null;
-  };
-  imageUrl: string;
-}
-
-export const Project = ({ project, imageUrl }: Props) => {
+export const ProjectDesktop = ({ project, imageUrl }: ProjectType) => {
   return (
-    <CarouselItem className="bg-th-secondary rounded-[5px] relative pb-2">
-      <Image src={imageUrl} alt={project.imageName} width={315} height={183} className="w-full h-[183px] object-cover" />
-      <div className="px-[10px]">
+    <div className="group relative h-max">
+      <Image
+        src={imageUrl}
+        alt={project.imageName}
+        width={425}
+        height={261}
+        className="w-[425px] h-[261px] object-cover rounded-t-[5px] lg:rounded-[5px] group-hover:brightness-[0.2] transition-all duration-500"
+      />
+
+      <div className="hidden group-hover:block group-hover:transition-all absolute top-0 py-10 px-5">
         <div className="flex items-center justify-between">
           <h4 className="text-[24px] font-bold text-th-text mt-[5px]">{project.name}</h4>
 
@@ -31,7 +28,7 @@ export const Project = ({ project, imageUrl }: Props) => {
                 </a>
               </>
             ) : (
-              <Image src={Github} alt="Github" width={29} height={29} className="" />
+              <Image src={Github} alt="Github" width={29} height={29} className="brightness-50" />
             )}
 
             {project.liveLink ? (
@@ -41,13 +38,12 @@ export const Project = ({ project, imageUrl }: Props) => {
                 </a>
               </>
             ) : (
-              <Image src={LiveIcon} alt="Live" width={29} height={29} className="" />
+              <Image src={LiveIcon} alt="Live" width={29} height={29} className="brightness-50" />
             )}
           </div>
         </div>
-
-        <p className="mt-[9px] text-th-text text-[12px] font-semibold">{project.description}</p>
+        <p className="mt-[9px] text-th-text text-[12px] font-semibold sm:text-[14px]">{project.description}</p>
       </div>
-    </CarouselItem>
+    </div>
   );
 };

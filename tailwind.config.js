@@ -73,6 +73,7 @@ module.exports = {
       },
       screens: {
         "th-md": "530px",
+        "th-lg": "1150px",
       },
     },
   },

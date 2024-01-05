@@ -1,0 +1,55 @@
+[
+  {
+    "name": "ReactJS",
+    "imgName": "reactjs"
+  },
+  {
+    "name": "NextJS",
+    "imgName": "nextjs",
+    "imageClassName": "h-[14px] w-[14px] md:h-[16px] md:w-[16px]"
+  },
+  {
+    "name": "TailwindCSS",
+    "imgName": "tailwindcss"
+  },
+  {
+    "name": "React Query",
+    "imgName": "reactQuery"
+  },
+  {
+    "name": "Prsima",
+    "imgName": "prisma"
+  },
+  {
+    "name": "Rest APIs",
+    "imgName": "api"
+  },
+  {
+    "name": "SQL",
+    "imgName": "sql"
+  },
+  {
+    "name": "MongoDB",
+    "imgName": "mongodb"
+  },
+  {
+    "name": "HTML5",
+    "imgName": "html"
+  },
+  {
+    "name": "CSS3",
+    "imgName": "css"
+  },
+  {
+    "name": "Javascript",
+    "imgName": "javascript"
+  },
+  {
+    "name": "Typescript",
+    "imgName": "typescript"
+  },
+  {
+    "name": "Django",
+    "imgName": "django"
+  }
+]
