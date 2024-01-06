@@ -1,18 +1,30 @@
-import WebDevSkillsData from "@/data/web-dev-skills-data.json";
-
-import { webDevSkillsImgsMap } from "@/data/data_maps/project-maps";
 import { SkillMobile } from "./skill-mobile";
+import { Skill } from "@/lib/types";
 
-export const SkillsMobile = () => {
+interface Props {
+  skillsData: Skill[];
+  skillsImgsMap: any;
+  theme?: "default" | "alt";
+}
+
+export const SkillsMobile = ({ skillsData, skillsImgsMap, theme = "default" }: Props) => {
+  console.log(skillsData[1].imgName);
+  console.log(skillsImgsMap);
+
   return (
     <div className="flex items-center justify-center gap-[12px] flex-wrap mt-2">
-      {WebDevSkillsData.map((skill) => (
-        <SkillMobile
-          imageUrl={webDevSkillsImgsMap[skill.imgName as keyof typeof webDevSkillsImgsMap].src}
-          text={skill.name}
-          imageClassName={skill.imageClassName || ""}
-        />
-      ))}
+      {skillsData.map((skill) => {
+        // console.log(skill.imgName);
+
+        return (
+          <SkillMobile
+            imageUrl={skillsImgsMap[skill.imgName as keyof typeof skillsImgsMap].src}
+            text={skill.name}
+            imageClassName={skill.imageClassName || ""}
+            theme={theme}
+          />
+        );
+      })}
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { About } from "@/components/about/about";
 import { Header } from "@/components/header/header";
 import { Hero } from "@/components/hero/hero";
+import { DsSkillsProjects } from "@/components/skills-and-projects/ds-skills-projects";
 import { WebDevSkillsProjects } from "@/components/skills-and-projects/web-dev-skills-projects";
 
 export default function Home() {
@@ -19,6 +20,10 @@ export default function Home() {
 
       <section className="flex items-center justify-center mt-[25px] md:mt-[35px] lg:mt-[60px] pl-[17px] pr-[10px]">
         <WebDevSkillsProjects />
+      </section>
+
+      <section className="bg-th-secondary flex items-center justify-center mt-[25px] md:mt-[35px] lg:mt-[60px] pl-[17px] pr-[10px]">
+        <DsSkillsProjects />
       </section>
 
       <div className="p-[10rem]" />

@@ -16,7 +16,7 @@ export const ProjectDesktop = ({ project, imageUrl }: ProjectType) => {
         className="w-[425px] h-[261px] object-cover rounded-t-[5px] lg:rounded-[5px] group-hover:brightness-[0.2] transition-all duration-500"
       />
 
-      <div className="hidden group-hover:block group-hover:transition-all absolute top-0 py-10 px-5">
+      <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 absolute top-0 py-10 px-5">
         <div className="flex items-center justify-between">
           <h4 className="text-[24px] font-bold text-th-text mt-[5px]">{project.name}</h4>
 

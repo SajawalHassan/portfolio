@@ -1,17 +1,21 @@
-import WebDevProjectsData from "@/data/web-dev-projects-data.json";
-
-import { webDevProjectImgsMap } from "@/data/data_maps/project-maps";
 import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ProjectMobile } from "./project-mobile";
+import { RawProjectType } from "@/lib/types";
 
-export const ProjectsMobile = () => {
+interface Props {
+  projectsData: RawProjectType[];
+  projectsImgsMap: any;
+  theme?: "default" | "alt";
+}
+
+export const ProjectsMobile = ({ projectsData, projectsImgsMap, theme = "default" }: Props) => {
   return (
-    <div className="mt-[29px] relative max-w-[30rem]">
+    <div className="mt-[29px] relative max-w-[30rem] mx-auto">
       <p className="text-[12px] text-[#7d7d7d] uppercase font-bold">Projects</p>
       <Carousel>
         <CarouselContent>
-          {WebDevProjectsData.map((project) => (
-            <ProjectMobile project={project} imageUrl={webDevProjectImgsMap[project.imageName as keyof typeof webDevProjectImgsMap].src} />
+          {projectsData.map((project) => (
+            <ProjectMobile project={project} imageUrl={projectsImgsMap[project.imageName as keyof typeof projectsImgsMap].src} theme={theme} />
           ))}
         </CarouselContent>
         <CarouselPrevious className="absolute inset-y-0 my-auto left-5" />

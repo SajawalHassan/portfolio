@@ -17,6 +17,20 @@ import Javascript from "@/assets/svgs/javascript-icon.svg";
 import Typescript from "@/assets/svgs/typescript-icon.svg";
 import Django from "@/assets/svgs/django-icon.svg";
 
+import LinearAlgebra from "@/assets/svgs/maths-icon.svg";
+import Matplotlib from "@/assets/svgs/matplotlib-icon.svg";
+import Numpy from "@/assets/svgs/numpy-icon.svg";
+import Pandas from "@/assets/svgs/pandas-icon.svg";
+import Tensorflow from "@/assets/svgs/tensorflow-icon.svg";
+import Pytorch from "@/assets/svgs/pytorch-icon.svg";
+import Statistics from "@/assets/svgs/statistics-icon.svg";
+import Python from "@/assets/svgs/python-icon.svg";
+
+import AnimeGAN from "@/assets/project-images/anime-gan.png";
+import DigitClassifier from "@/assets/project-images/digit-classifier.png";
+import SentenceGeneration from "@/assets/project-images/sentence-generation.png";
+import SentimentAnalysis from "@/assets/project-images/sentiment-analysis.png";
+
 export const webDevProjectImgsMap = {
   reddit: RedditCloneImg,
   discord: DiscordCloneImg,
@@ -38,4 +52,22 @@ export const webDevSkillsImgsMap = {
   javascript: Javascript,
   typescript: Typescript,
   django: Django,
+};
+
+export const dsSkillsImgsMap = {
+  linearAlgebra: LinearAlgebra,
+  matplotlib: Matplotlib,
+  numpy: Numpy,
+  pandas: Pandas,
+  python: Python,
+  tensorflow: Tensorflow,
+  pytorch: Pytorch,
+  statistics: Statistics,
+};
+
+export const dsProjectImgsMap = {
+  anime: AnimeGAN,
+  sentences: SentenceGeneration,
+  sentiment: SentimentAnalysis,
+  digits: DigitClassifier,
 };

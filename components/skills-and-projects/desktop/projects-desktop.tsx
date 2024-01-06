@@ -5,15 +5,21 @@ import WhiteStar from "@/assets/WhiteStar.png";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ProjectDesktop } from "./project-desktop";
 import { webDevProjectImgsMap } from "@/data/data_maps/project-maps";
+import { RawProjectType } from "@/lib/types";
 
-export const ProjectsDesktop = () => {
+interface Props {
+  projectsData: RawProjectType[];
+  projectsImgsMap: any;
+}
+
+export const ProjectsDesktop = ({ projectsData, projectsImgsMap }: Props) => {
   return (
     <div className="relative">
       <Carousel orientation="vertical" className="relative lg:hidden">
         <CarouselContent className="max-h-[36rem]">
-          {WebDevProjectsData.map((project) => (
+          {projectsData.map((project) => (
             <CarouselItem>
-              <ProjectDesktop project={project} imageUrl={webDevProjectImgsMap[project.imageName as keyof typeof webDevProjectImgsMap].src} />
+              <ProjectDesktop project={project} imageUrl={projectsImgsMap[project.imageName as keyof typeof projectsImgsMap].src} />
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -22,8 +28,8 @@ export const ProjectsDesktop = () => {
       </Carousel>
 
       <section className="hidden lg:grid grid-cols-2 gap-x-[34px] gap-y-[34px]">
-        {WebDevProjectsData.map((project) => (
-          <ProjectDesktop project={project} imageUrl={webDevProjectImgsMap[project.imageName as keyof typeof webDevProjectImgsMap].src} />
+        {projectsData.map((project, i) => (
+          <ProjectDesktop project={project} imageUrl={projectsImgsMap[project.imageName as keyof typeof projectsImgsMap].src} key={i} />
         ))}
       </section>
 

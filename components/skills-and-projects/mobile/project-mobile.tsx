@@ -4,10 +4,15 @@ import { ProjectType } from "@/lib/types";
 import Github from "@/assets/GitHub.png";
 import LiveIcon from "@/assets/RFID-Signal.png";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
-export const ProjectMobile = ({ project, imageUrl }: ProjectType) => {
+type Props = ProjectType & {
+  theme: "default" | "alt";
+};
+
+export const ProjectMobile = ({ project, imageUrl, theme }: Props) => {
   return (
-    <CarouselItem className="bg-th-secondary rounded-[5px] relative pb-2">
+    <CarouselItem className={cn("rounded-[5px] relative pb-2", theme === "default" ? "bg-th-secondary" : "bg-th-background/50")}>
       <Image src={imageUrl} alt={project.imageName} width={315} height={183} className="w-full h-[183px] object-cover rounded-t-[5px]" />
       <div className="px-[10px]">
         <div className="flex items-center justify-between">

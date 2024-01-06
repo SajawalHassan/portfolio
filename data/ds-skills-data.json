@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Python",
+    "imgName": "python"
+  },
+  {
+    "name": "Pandas",
+    "imgName": "pandas"
+  },
+  {
+    "name": "Numpy",
+    "imgName": "numpy"
+  },
+  {
+    "name": "Matplotlib",
+    "imgName": "matplotlib"
+  },
+  {
+    "name": "Tensorflow",
+    "imgName": "tensorflow"
+  },
+  {
+    "name": "Pytorch",
+    "imgName": "pytorch"
+  },
+  {
+    "name": "Linear Algebra",
+    "imgName": "linearAlgebra"
+  },
+  {
+    "name": "Statistics",
+    "imgName": "statistics"
+  }
+]
