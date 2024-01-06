@@ -8,14 +8,9 @@ interface Props {
 }
 
 export const SkillsMobile = ({ skillsData, skillsImgsMap, theme = "default" }: Props) => {
-  console.log(skillsData[1].imgName);
-  console.log(skillsImgsMap);
-
   return (
     <div className="flex items-center justify-center gap-[12px] flex-wrap mt-2">
       {skillsData.map((skill) => {
-        // console.log(skill.imgName);
-
         return (
           <SkillMobile
             imageUrl={skillsImgsMap[skill.imgName as keyof typeof skillsImgsMap].src}

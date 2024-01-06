@@ -1,4 +1,3 @@
-import { CarouselItem } from "@/components/ui/carousel";
 import { ProjectType } from "@/lib/types";
 
 import Github from "@/assets/GitHub.png";
@@ -7,7 +6,7 @@ import Image from "next/image";
 
 export const ProjectDesktop = ({ project, imageUrl }: ProjectType) => {
   return (
-    <div className="group relative h-max">
+    <div className="group relative h-max z-20">
       <Image
         src={imageUrl}
         alt={project.imageName}

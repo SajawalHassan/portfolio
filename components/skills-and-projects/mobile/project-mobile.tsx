@@ -1,10 +1,10 @@
 import { CarouselItem } from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
 import { ProjectType } from "@/lib/types";
 
 import Github from "@/assets/GitHub.png";
 import LiveIcon from "@/assets/RFID-Signal.png";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
 type Props = ProjectType & {
   theme: "default" | "alt";

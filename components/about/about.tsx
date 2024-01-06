@@ -9,7 +9,7 @@ export const About = () => {
   return (
     <div className="max-w-[1280px] w-full pt-[20px] pb-[15px] md:flex gap-x-[28px] relative" id="about">
       <h1 className="text-[38px] md:text-[30px] lg:text-[44px] th-md:text-center font-bold bg-gradient-to-r from-th-primary to-th-accent bg-clip-text text-transparent md:hidden">
-        Who am I
+        Who I am
       </h1>
       <div className="overflow-hidden min-w-[340px] min-h-[310px] max-w-[506px] max-h-[684px] lg:max-w-full lg:max-h-full relative rounded-[24px] th-md:mx-auto">
         <Image src={MeAtDinner} alt="Sajawal Hassan at dinner" className="object-cover rounded-[24px] lg:h-full lg:w-full" />
@@ -17,7 +17,7 @@ export const About = () => {
 
       <section>
         <h1 className="text-[38px] md:text-[30px] lg:text-[44px] font-bold bg-gradient-to-r from-th-primary to-th-accent bg-clip-text text-transparent hidden md:block">
-          Who am I
+          Who I am
         </h1>
 
         <section className="text-[12px] th-md:text-[15px] font-semibold text-th-text space-y-2.5 mt-[12px]">

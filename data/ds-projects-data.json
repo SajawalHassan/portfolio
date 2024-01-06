@@ -7,17 +7,17 @@
     "liveLink": null
   },
   {
-    "imageName": "sentiment",
-    "name": "Sentiment LSTM",
-    "description": "The project employs LSTM neural networks in Python (PyTorch) for sentiment analysis of text data (reviews). It tokenizes text, constructs LSTM models, and requires common Python libraries for execution.",
-    "githubLink": "https://github.com/SajawalHassan/sentiment_analysis_pytorch",
-    "liveLink": null
-  },
-  {
     "imageName": "sentences",
     "name": "Sentence Generation",
     "description": "This project develops a TensorFlow-based LSTM model for completing sentences. It features a multi-layered architecture with dense layers, an LSTM layer, and a softmax output layer, and is trained using categorical crossentropy and the Adam optimizer.",
     "githubLink": "https://github.com/SajawalHassan/sentence_generation_tensorflow",
+    "liveLink": null
+  },
+  {
+    "imageName": "sentiment",
+    "name": "Sentiment LSTM",
+    "description": "The project employs LSTM neural networks in Python (PyTorch) for sentiment analysis of text data (reviews). It tokenizes text, constructs LSTM models, and requires common Python libraries for execution.",
+    "githubLink": "https://github.com/SajawalHassan/sentiment_analysis_pytorch",
     "liveLink": null
   },
   {
