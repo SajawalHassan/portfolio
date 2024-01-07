@@ -6,6 +6,7 @@ import Github from "@/assets/svgs/GitHub.svg";
 import Twitter from "@/assets/svgs/Twitter.svg";
 import Youtube from "@/assets/svgs/YouTube.svg";
 import Image from "next/image";
+import axios from "axios";
 
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
@@ -14,9 +15,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
-  fullName: z.string().min(3, "What's your name?"),
+  name: z.string().min(3, "What's your name?"),
   email: z.string().min(1, "Email?").email("Enter a valid email"),
   message: z.string().min(1, "What do you want to talk about?"),
 });
@@ -24,15 +26,24 @@ const formSchema = z.object({
 export const Contact = () => {
   const [submitContent, setSubmitContent] = useState<"Send Message" | "Message Sent">("Send Message");
 
-  const form = useForm({ resolver: zodResolver(formSchema), defaultValues: { fullName: "", email: "", message: "" } });
+  const form = useForm({ resolver: zodResolver(formSchema), defaultValues: { name: "", email: "", message: "" } });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    try {
+      await axios.post("/api/send", { ...values });
+    } catch (error) {
+      console.log(error);
+    }
+
     form.reset();
     setSubmitContent("Message Sent");
+
     setTimeout(() => {
       setSubmitContent("Send Message");
     }, 2000);
   };
+
+  const isSubmitting = form.formState.isSubmitting;
 
   return (
     <div className="w-full pb-10 max-w-[1280px] th-lg:pr-[184px] mx-auto" id="contact">
@@ -45,7 +56,7 @@ export const Contact = () => {
           <div className="md:flex items-center gap-x-[19px] space-y-[26px] md:space-y-0">
             <FormField
               control={form.control}
-              name="fullName"
+              name="name"
               render={({ field }) => (
                 <FormItem className="flex-grow relative">
                   <div className="input-container">
@@ -109,8 +120,9 @@ export const Contact = () => {
             <Button
               variant={"primary"}
               type="submit"
-              className={cn("transition-all w-[7.5rem] lg:w-[10rem]", submitContent === "Message Sent" ? "text-th-text" : "text-white")}>
-              {submitContent}
+              className={cn("transition-all w-[7.5rem] lg:w-[10rem]", submitContent === "Message Sent" ? "text-th-text" : "text-white")}
+              disabled={isSubmitting}>
+              {isSubmitting ? <Loader2 className="h-6 w-6 animate-spin" /> : submitContent}
             </Button>
           </div>
         </form>
