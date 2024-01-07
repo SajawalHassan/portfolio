@@ -14,7 +14,7 @@ export const Hero = () => {
     <>
       <main className="mt-[54px] flex flex-col items-center md:flex-row md:justify-between relative" id="hero">
         <section className="text-center md:text-left relative">
-          <h3 className="text-th-text text-[26px] md:text-[20px] lg:text-[32px] font-bold">Hi I'm</h3>
+          <h3 className="text-th-text text-[26px] md:text-[20px] lg:text-[32px] font-bold">Hi I&apos;m</h3>
           <h1 className="text-[38px] md:text-[30px] lg:text-[44px] font-bold bg-gradient-to-r from-th-primary to-th-accent bg-clip-text text-transparent">
             Sajawal Hassan
           </h1>

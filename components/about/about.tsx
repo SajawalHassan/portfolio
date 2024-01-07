@@ -21,10 +21,10 @@ export const About = () => {
         </h1>
 
         <section className="text-[12px] th-md:text-[15px] font-semibold text-th-text space-y-2.5 mt-[12px]">
-          <p>Hi, I'm Sajawal Hassan.</p>
+          <p>Hi, I&apos;m Sajawal Hassan.</p>
           <p>
-            I'm a teenage guy who loves working in the tech industry. I've built many projects in many different fields from Website Development to
-            Game Development to Data Science.
+            I&apos;m a teenage guy who loves working in the tech industry. I&apos;ve built many projects in many different fields from Website
+            Development to Game Development to Data Science.
           </p>
           <p>
             I have always had a passion for tech since I was young, starting my coding journey at the young age of 11. I started with Website
@@ -34,8 +34,8 @@ export const About = () => {
           <p>
             I can give you the results you need, with having built multiple full stack projects from a Reddit Clone to a Discord Clone and to even a
             Google Clone, I know for a fact I can do the task required of me. I have also created the website for an event of one of the the biggest
-            universities in my home town Pakistan, called CRSOM. Along with all this I've learnt quite a lot of Data Science as well, from creating an
-            LSTM that generates sentences to a sentiment analysis LSTM. I've also created GANS capable of generating images.
+            universities in my home town Pakistan, called CRSOM. Along with all this I&apos;ve learnt quite a lot of Data Science as well, from
+            creating an LSTM that generates sentences to a sentiment analysis LSTM. I&apos;ve also created GANS capable of generating images.
           </p>
           <p>
             All in all, I am someone who will be very valuable to you and your team, with my skills, I am confident I can make your dreams into a

@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
-  name: z.string().min(3, "What's your name?"),
+  name: z.string().min(3, "What&apos;s your name?"),
   email: z.string().min(1, "Email?").email("Enter a valid email"),
   message: z.string().min(1, "What do you want to talk about?"),
 });

@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Sajawal Hassan",
-  description: "Sajawal Hassan's portfolio, a Data Scientist and a Fullstack Web Developer",
+  description: "Sajawal Hassan&apos;s portfolio, a Data Scientist and a Fullstack Web Developer",
   authors: { name: "Sajawal Hassan", url: "https://sajawalhassan.vercel.app" },
   keywords: [
     "Data",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   category: "Portfolio",
   creator: "Sajawal Hassan",
-  abstract: "Sajawal Hassan's portfolio, a Data Scientist and a Fullstack Web Developer",
+  abstract: "Sajawal Hassan&apos;s portfolio, a Data Scientist and a Fullstack Web Developer",
   classification: "Sajawal Hassan portfolio",
   publisher: "vercel",
   appLinks: {
