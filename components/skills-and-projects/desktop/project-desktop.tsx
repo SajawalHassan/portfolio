@@ -1,6 +1,6 @@
 import { ProjectType } from "@/lib/types";
 
-import Github from "@/assets/GitHub.png";
+import Github from "@/assets/svgs/GitHub.svg";
 import LiveIcon from "@/assets/RFID-Signal.png";
 import Image from "next/image";
 

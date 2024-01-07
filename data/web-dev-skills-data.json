@@ -25,6 +25,10 @@
     "imgName": "api"
   },
   {
+    "name": "Git / Github",
+    "imgName": "github"
+  },
+  {
     "name": "SQL",
     "imgName": "sql"
   },

@@ -1,4 +1,5 @@
 import { About } from "@/components/about/about";
+import { Contact } from "@/components/contact/contact";
 import { Header } from "@/components/header/header";
 import { Hero } from "@/components/hero/hero";
 import { DsSkillsProjects } from "@/components/skills-and-projects/ds-skills-projects";
@@ -18,7 +19,7 @@ export default function Home() {
         <About />
       </section>
 
-      <section className="flex items-center justify-center mt-[25px] md:mt-[35px] lg:mt-[60px] pl-[17px] pr-[10px]">
+      <section className="flex justify-center mt-[25px] md:mt-[35px] lg:mt-[60px] pl-[17px] pr-[10px]">
         <WebDevSkillsProjects />
       </section>
 
@@ -26,7 +27,9 @@ export default function Home() {
         <DsSkillsProjects />
       </section>
 
-      <div className="p-[10rem]" />
+      <section className="flex px-[15px] mt-[25px] md:mt-[35px]">
+        <Contact />
+      </section>
     </>
   );
 }

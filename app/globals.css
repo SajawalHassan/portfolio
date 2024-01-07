@@ -90,6 +90,12 @@ body {
   }
 }
 
+@layer components {
+  .input-container {
+    @apply w-full rounded-md bg-gradient-to-r from-th-text to-th-primary p-[2px] focus-within:shadow-md focus-within:shadow-th-text/25 transition-all duration-200;
+  }
+}
+
 .rotatation-175 {
   transform: rotate(175deg);
 }

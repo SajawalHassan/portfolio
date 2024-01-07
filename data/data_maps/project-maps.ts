@@ -16,6 +16,7 @@ import CSS3 from "@/assets/svgs/css3-icon.svg";
 import Javascript from "@/assets/svgs/javascript-icon.svg";
 import Typescript from "@/assets/svgs/typescript-icon.svg";
 import Django from "@/assets/svgs/django-icon.svg";
+import Github from "@/assets/svgs/github-icon.svg";
 
 import LinearAlgebra from "@/assets/svgs/maths-icon.svg";
 import Matplotlib from "@/assets/svgs/matplotlib-icon.svg";
@@ -45,6 +46,7 @@ export const webDevSkillsImgsMap = {
   reactQuery: ReactQuery,
   prisma: Prisma,
   api: API,
+  github: Github,
   sql: SQL,
   mongodb: MongoDB,
   html: HTML5,

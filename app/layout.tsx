@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,8 +10,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-th-background">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className="bg-th-background" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }

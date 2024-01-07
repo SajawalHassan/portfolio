@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SajawalHassan from "@/assets/SajawalHassan.png";
+import SajawalHassan from "@/assets/svgs/SajawalHassan.svg";
 import WhiteStar from "@/assets/WhiteStar.png";
 import Cloud from "@/assets/Cloud.png";
 import Rain from "@/assets/Rain.png";
@@ -22,15 +22,11 @@ export const Hero = () => {
 
           <div className="flex items-center justify-center md:justify-start gap-x-[8px] mt-[14px]">
             <Link href="#contact">
-              <Button className="w-[91px] h-[33px] lg:w-[126px] lg:h-[47px] rounded-[8px] bg-th-primary font-bold text-[11px] lg:text-[16px] hover:bg-th-primary/70">
-                Contact me!
-              </Button>
+              <Button variant={"primary"}>Contact me!</Button>
             </Link>
 
             <Link href="#projects">
-              <Button className="w-[91px] h-[33px] lg:w-[126px] lg:h-[47px] rounded-[8px] bg-th-secondary text-th-text text-[11px] lg:text-[16px] hover:bg-th-secondary/70">
-                My Projects
-              </Button>
+              <Button variant={"secondary"}>My Projects</Button>
             </Link>
           </div>
 

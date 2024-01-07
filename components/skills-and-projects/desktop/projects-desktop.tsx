@@ -17,8 +17,8 @@ export const ProjectsDesktop = ({ projectsData, projectsImgsMap, theme = "defaul
     <div className="relative">
       <Carousel orientation="vertical" className="relative lg:hidden">
         <CarouselContent className="max-h-[36rem]">
-          {projectsData.map((project) => (
-            <CarouselItem>
+          {projectsData.map((project, i) => (
+            <CarouselItem key={i}>
               <ProjectDesktop project={project} imageUrl={projectsImgsMap[project.imageName as keyof typeof projectsImgsMap].src} />
             </CarouselItem>
           ))}

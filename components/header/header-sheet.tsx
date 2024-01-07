@@ -5,9 +5,9 @@ import { MenuIcon } from "@/components/ui/icons";
 import { HeaderSheetItem } from "./header-sheet-item";
 import { useState } from "react";
 
-import YoutubeImg from "@/assets/YouTube.png";
-import GithubImg from "@/assets/GitHub.png";
-import TwitterImg from "@/assets/Twitter.png";
+import YoutubeImg from "@/assets/svgs/YouTube.svg";
+import GithubImg from "@/assets/svgs/GitHub.svg";
+import TwitterImg from "@/assets/svgs/Twitter.svg";
 import Image from "next/image";
 
 export const HeaderSheet = () => {
@@ -15,7 +15,7 @@ export const HeaderSheet = () => {
 
   return (
     <Sheet open={sheetIsActive} onOpenChange={() => setSheetIsActive(!sheetIsActive)}>
-      <SheetTrigger asChild>
+      <SheetTrigger>
         <MenuIcon className="cursor-pointer" />
       </SheetTrigger>
 
