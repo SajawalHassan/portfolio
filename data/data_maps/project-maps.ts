@@ -26,6 +26,7 @@ import Tensorflow from "@/assets/svgs/tensorflow-icon.svg";
 import Pytorch from "@/assets/svgs/pytorch-icon.svg";
 import Statistics from "@/assets/svgs/statistics-icon.svg";
 import Python from "@/assets/svgs/python-icon.svg";
+import Linux from "@/assets/svgs/linux-icon.svg";
 
 import AnimeGAN from "@/assets/project-images/anime-gan.png";
 import DigitClassifier from "@/assets/project-images/digit-classifier.png";
@@ -57,7 +58,6 @@ export const webDevSkillsImgsMap = {
 };
 
 export const dsSkillsImgsMap = {
-  linearAlgebra: LinearAlgebra,
   matplotlib: Matplotlib,
   numpy: Numpy,
   pandas: Pandas,
@@ -65,6 +65,8 @@ export const dsSkillsImgsMap = {
   tensorflow: Tensorflow,
   pytorch: Pytorch,
   statistics: Statistics,
+  linearAlgebra: LinearAlgebra,
+  linux: Linux,
 };
 
 export const dsProjectImgsMap = {

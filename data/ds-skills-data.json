@@ -24,6 +24,10 @@
     "imgName": "pytorch"
   },
   {
+    "name": "Linux",
+    "imgName": "linux"
+  },
+  {
     "name": "Linear Algebra",
     "imgName": "linearAlgebra"
   },
