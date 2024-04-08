@@ -29,12 +29,13 @@ export const About = () => {
           <p>
             I have always had a passion for tech since I was young, starting my coding journey at the young age of 11. I started with Website
             Development and went on to learn many different fields. As of now I am extremely experienced in Website Development, and quite experienced
-            with Data Science.
+            with Data Science. Because of Website Development, I am also very well versed in App Development, having learnt React Native. I have made
+            multiple projects through React Native as well (although unfinished)
           </p>
           <p>
             I can give you the results you need, with having built multiple full stack projects from a Reddit Clone to a Discord Clone and to even a
             Google Clone, I know for a fact I can do the task required of me. I have also created the website for an event of one of the the biggest
-            universities in my home town Pakistan, called CRSOM. Along with all this I&apos;ve learnt quite a lot of Data Science as well, from
+            universities in my home town Pakistan, called CRSOM, I have multiple projects of React Native with fullstack expertise. Along with all this I&apos;ve learnt quite a lot of Data Science as well, from
             creating an LSTM that generates sentences to a sentiment analysis LSTM. I&apos;ve also created GANS capable of generating images.
           </p>
           <p>
