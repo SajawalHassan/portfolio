@@ -4,6 +4,14 @@
     "imgName": "reactjs"
   },
   {
+    "name": "React Native",
+    "imgName": "reactjs"
+  },
+  {
+    "name": "Expo",
+    "imgName": "expo"
+  },
+  {
     "name": "NextJS",
     "imgName": "nextjs",
     "imageClassName": "h-[14px] w-[14px] md:h-[16px] md:w-[16px]"

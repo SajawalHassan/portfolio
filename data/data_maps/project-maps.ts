@@ -4,6 +4,7 @@ import GoogleCloneImg from "@/assets/project-images/google-clone.png";
 import CRSOMImg from "@/assets/project-images/crsom.png";
 
 import ReactJS from "@/assets/svgs/reactjs-icon.svg";
+import Expo from "@/assets/svgs/expo.svg";
 import ReactQuery from "@/assets/svgs/react-query-icon.svg";
 import NextJS from "@/assets/svgs/nextjs-icon.svg";
 import TailwindCSS from "@/assets/svgs/tailwindcss-icon.svg";
@@ -42,6 +43,7 @@ export const webDevProjectImgsMap = {
 
 export const webDevSkillsImgsMap = {
   reactjs: ReactJS,
+  expo: Expo,
   nextjs: NextJS,
   tailwindcss: TailwindCSS,
   reactQuery: ReactQuery,
