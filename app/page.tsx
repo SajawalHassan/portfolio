@@ -23,7 +23,7 @@ export default function Home() {
         <WebDevSkillsProjects />
       </section>
 
-      <section className="bg-th-secondary flex items-center justify-center mt-[25px] md:mt-[35px] lg:mt-[60px] pl-[17px] pr-[10px]">
+      <section className="bg-th-secondary flex items-center justify-center mt-[25px] md:mt-[35px] lg:mt-[140px] pl-[17px] pr-[10px]">
         <DsSkillsProjects />
       </section>
 
