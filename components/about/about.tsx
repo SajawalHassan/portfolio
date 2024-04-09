@@ -27,7 +27,7 @@ export const About = () => {
             Development to Game Development to Data Science.
           </p>
           <p>
-            I have always had a passion for tech since I was young, starting my coding journey at the young age of 11. I started with Website
+            I have always had a passion for tech since I was young, starting my coding journey at the young age of 8. I started with Website
             Development and went on to learn many different fields. As of now I am extremely experienced in Website Development, and quite experienced
             with Data Science. Because of Website Development, I am also very well versed in App Development, having learnt React Native. I have made
             multiple projects through React Native as well (although unfinished)
